@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getsetstrribute</title>
+</head>
+<body>
+    <h1>helooooooooooo</h1>
+    <a id="url" href="https://www.google.com">clickto google</a>
+    <button onclick="getat()">get</button>
+    <button onclick="setat()">set</button>
+    <script>
+
+        const getat=()=>{
+            let i=document.getElementById("url");
+            let j=i.getAttribute('href');
+            console.log(j);
+            console.log(i.getAttribute("id"));
+
+
+        }
+        const setat=()=>{
+            let my=document.getElementById('url');
+            my.setAttribute('href','www.gmail.com');
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buld on_off project</title>
+    <style>
+        
+        .bulb-container{
+            margin:20px;
+            padding: 20px;
+            /* background-color: antiquewhite; */
+        }
+    </style>
+</head>
+<body>
+    <h1>here is my bulb control</h1>
+    <button onclick="turnon()">Turn on</button>
+    <button onclick="turnof()"> Turn Off</button>
+    <button id="onoff" onclick="togglebulb()"> ON</button>
+    
+    <div class="bulb-container">
+
+        <img onclick="myclick()" id="bulb" src="blubon.jpg" style="height: 30rem;" alt=" "/>
+    </div>
+ <script>
+    // turn on function
+    const turnon=()=>{
+        let i=document.getElementById('bulb');
+        console.log(i);
+        i.setAttribute('src','blubon.jpg');
+
+    };
+
+    const turnof=()=>{
+        let j=document.getElementById("bulb");
+        console.log(j);
+        j.setAttribute("src",'bluboff.png');
+    };
+
+    const togglebulb=()=>{
+        let imgobj=document.getElementById("bulb");
+        
+        let srcval=imgobj.getAttribute("src");
+        console.log(srcval);
+        let so=document.getElementById("onoff");
+        let buttontext=so.innerHTML;
+        console.log(buttontext)
+        if(srcval=='bluboff.png'){
+            turnon();
+            so.innerHTML="OFF";
+           
+
+            
+        }else{
+            turnof();
+            so.innerHTML="ON";
+        }
+
+
+    }
+    const myclick=()=>{
+        let imgobj=document.getElementById("bulb");
+        
+        let srcval=imgobj.getAttribute("src");
+        if(srcval=='bluboff.png'){
+            turnon();
+            so.innerHTML="OFF";
+           
+
+            
+        }else{
+            turnof();
+            so.innerHTML="ON";
+        }
+
+
+    }
+
+ </script>   
+</body>
+</html>

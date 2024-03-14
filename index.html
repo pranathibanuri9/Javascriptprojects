@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom styling</title>
+</head>
+
+
+<body>
+    <h1>hellooooo</h1>
+    <h2>how are you</h2>
+    <h1>helloooo</h1>
+    <p1>hi how are you</p1>
+    <h2 id="banner">work of data types</h2>
+    <h4 class="mycls">somethinggggg somethingggg</h4>
+    <h4 class="mycls">somethinggggg somethingggg</h4>
+    <h4 class="mycls">somethinggggg somethingggg</h4>
+    <h4 class="mycls">somethinggggg somethingggg</h4>
+    <script >
+        // let message="hey iam rocking";
+        // window.alert(message)
+        // var pra=prompt("enter your name");
+        // console.log(pra)
+        // var so=confirm("are you sure")
+        // if(so){
+        //     console.log("she said yes")
+        // }else{
+        //     console.log("ohh no")
+        // }
+        // console.log("my thing")
+        // console.warn("this is warning")
+        // console.error("erreoeeeeeeeeee")
+        // setTimeout(() => {
+        //     console.clear();
+            
+        // }, 3000); 
+    // var student={
+    //         name:"pranathi",
+    //         address:"muchintal"
+    //     } 
+    //     console.log(student.name)
+    // understanding datatypes
+
+    // var a=5
+    // console.log(typeof a)
+
+    // let name="pranathi"
+    // console.log(typeof name)
+
+    // const isactive=true
+    // console.log(typeof isactive)
+
+    // let names=["a","b","c"]
+    // console.log( typeof names)
+
+    // let x=23;
+    // let message="my name is pranathi";
+    // console.log(message)
+    // let re=message.length
+    // let s="JJavaaaa";
+    // concat()
+    // console.log(message+" "+re)
+    // let ans=s.charAt(3)
+    // console.log(ans)
+    // console.log(s.indexOf("v"))
+    // console.log(s.indexOf("v"))
+    // console.log(s.toLowerCase())
+    // console.log(s.toUpperCase())
+    // console.log(s.substring(2,5))
+    // five important string operations
+    // let s1="mystring";
+    // let s2="something";
+    // let s2="mystring";
+    // comparing the its occurance
+
+    // if(s1==s2){
+    //     console.log("both strings are equal");
+    // }else{
+    //     console.log("both are not equal");
+    // }
+
+    // let oldstring="I love js";
+    // let neww=oldstring.split(" ")
+    // oldstring.replace("lov","love")
+    
+    
+
+     
+    
+
+
+
+    // console.log(re)
+    // console.log(message.length)
+    // let vari=[5,6,7,8,9,0];
+    // console.log(vari)
+    // vari.push("something");
+    // console.log(vari.length);
+    // loop
+    // for each loop
+    // vari.forEach(function(item,index){
+    //     console.log(index,"=>",item);
+
+    // })
+
+    // adding element at last
+    // vari.pop();
+
+    // remove elemet at beginning
+    // vari.shift();
+    // add element at first
+    // vari.unshift("helloooo");
+    // console.log(vari);
+    // splice function
+    // function myfunc(){
+    //     console.log("my")
+    // }
+    // myfunc()
+
+    // function dosum(a,b){
+    //     let c=a+b;
+    //     return c
+    // }
+    // let r=dosum(10,20);
+    // console.log(r);
+
+    // const tocell=()=>{
+
+    // }
+
+    // for(let i=1;i<=10;i++){
+
+    // }
+    // let i=10;
+    // while(i<=20){
+    //     console.log(i);
+    //     i++;
+    // }
+    
+    //    let myfunc={ name:"pranathi",
+    //     phone: 9158485945,
+    //     address:'lolooo',
+    // }
+    // console.log(myfunc);
+
+    // for(let k in myfunc ){
+    //     console.log(`${k}=>${myfunc[k]}`)
+    // }
+    // it iterates the objects and return index incase of for of it gives us value
+    // let ar=["abs","kfc","mcc"]
+    // for(var i in ar){
+    //     console.log(ar[i]);
+    // }
+    // for(let i of ar){
+    //     console.log(i);
+    // }
+
+    // let ob={
+    //     name:"pranathi",
+    //     rollno:123,
+    //     phone:93244,
+    //     display:function(){
+    //         console.log("my functionnnnn")
+    //         consolelog(this.name);
+    //     }
+    //  }
+
+    //  for (let k in ob){
+    //     console.log(k)
+    //     console.log(ob[k])
+    //  }
+    // console.log(ob);
+    // ob.display();
+    // changing values of names
+    // console.log(ob.name);
+    // ob["newww"]="restartttt";
+    // console.log(ob);
+
+    // let some=document.documentElement;
+    // let bo=document.body;
+    // let he=document.head;
+
+    // selecting elemet by id
+
+
+    // console.log(some);
+    // console.log(bo);
+    // console.log(he);
+    // selecting elemts by id
+    // let hr=document.getElementById("banner");
+
+    // console.log(hr)
+    // hr.innerHTML="change text";
+    // console.log(hr)
+    // hr.style.color="green"
+    // hr.style.backgroundColor="red"
+
+    // selecting elements by class name
+    // get elemets by class name
+    // let myc=document.getElementsByClassName("mycls");
+    // console.log(myc)
+    // for(let i of myc){
+    //     console.log(i);
+    //     // i.style.color="white";
+    //     i.style.backgroundColor="red";
+    // }
+
+    // selecting elements with the help of css selector
+    // queryselector for single  element
+    // qureyselector all for multiple elements
+    // let els=document.querySelector(".mycls")
+    // console.log(els)
+    // let em=document.querySelectorAll(".mycls")
+    // for(var t of em){
+    //     console.log(t)
+    // }
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    </script>
+    
+    
+</body>
+</html>

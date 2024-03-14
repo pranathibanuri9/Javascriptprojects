@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom navigation</title>
+</head>
+<body>
+    <div id="cointainer">
+        <h1 id="title">we are learning js</h1>
+        <p id="content">
+            <span>java script is one of the most popular language for frontend</span>
+
+
+        </p>
+
+
+
+    </div>
+    <script>
+        let conob=document.getElementById("cointainer");
+        console.log(conob);
+        console.log(conob.firstElementChild.nodeName);
+        let fi=conob.firstElementChild;
+        fi.innerHTML="na istammmmmmm";
+        // last chile
+        let nodii=conob.children;
+        for(let v of nodii){
+            console.log(v.nodeName);
+        }
+        // cointainer paremt node is body
+        let parenetNode=conob.parentNode;
+        console.log(parenetNode.nodeName);
+
+        // access siblings in node
+        let titleob=document.getElementById("title");
+        let nexts=titleob.nextElementSibling;
+        console.log(nexts.nodeName);
+
+
+
+
+
+
+
+    </script>
+    
+
+    
+</body>
+</html>

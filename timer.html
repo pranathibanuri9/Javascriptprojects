@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timers</title>
+</head>
+<body>
+    <h1> java script timerss</h1>
+    <button onclick="start()">start</button>
+    <button onclick="stop()">stop</button>
+
+    <script>
+        // setTimeout()-excute code after a delay
+        // we have to write our code and excute after 5 sec
+
+        function mycode(){
+            console.log("howwwwwwwwwwwwwwwwwwww");
+            console.log("my funccc")
+        }
+        let timestop; 
+        const start=()=>{
+            // setTimeout(mycode,5000);
+           timerstop=setInterval(mycode,2000);
+
+
+        }
+        function stop(){
+            clearInterval(timerstop);
+        }
+        // setInterval()-execute code at regulat interval
+    </script>
+    
+</body>
+</html>

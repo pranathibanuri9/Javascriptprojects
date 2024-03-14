@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h1 id="title">heloooooo worlddd</h1>
+        <p id="hint">this is a sample exampleee</p>
+
+
+    </div>
+    <button onclick="addNode()">Clickto add Node</button>
+    <script>
+        const addNode=()=>{
+            console.log("addoing node");
+            // creating node
+            let divelemet=document.createElement("div");
+            // console.log(divelemet);
+            // create a text nodee
+            let textele=document.createTextNode("superebbb finally");
+            let textnext=document.createTextNode("superebbb finally yjis is very hrlpfull");
+            // adding text to div elemet
+            divelemet.appendChild(textele);
+            divelemet.appendChild(textnext);
+            console.log(divelemet);
+            // append to the html page
+
+          let mainele= document.getElementById("main");
+        //    adding after
+        //    mainele.appendChild(divelemet);
+        //    to add befor we need to give referance
+        let titlele=document.getElementById("title");
+        mainele.insertBefore(divelemet,titlele);
+
+
+
+        }
+        
+    </script>
+    
+    
+</body>
+</html>
